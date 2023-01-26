@@ -11,3 +11,4 @@
 #3 - Em duas vezes, preço normal de etiqueta sem juros ​
 
 #4 - Em três vezes, preço normal de etiqueta mais juros de 10% ​
+
