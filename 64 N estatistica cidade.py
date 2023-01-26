@@ -1,4 +1,5 @@
-# Foi feita uma estatística em cinco cidades brasileiras para coletar dados sobre acidentes de trânsito. Foram obtidos os seguintes dados:​
+# Foi feita uma estatística em cinco cidades brasileiras para coletar dados sobre acidentes de trânsito.
+# Foram obtidos os seguintes dados:​
 
 #Código da cidade;​
 
@@ -13,3 +14,4 @@
 #Qual a média de veículos nas cinco cidades juntas;​
 
 #Qual a média de acidentes de trânsito nas cidades com menos de 2.000 veículos de passeio.​
+
