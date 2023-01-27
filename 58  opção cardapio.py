@@ -16,55 +16,61 @@ pedido=input('Qual prato deseja hoje? \n 1-Lasanha\n 2-Parmegiana\n 3-Bife à Ca
               ' 6-Risoto com Salmão\n ')
 if pedido=='1':
     pedido=lasanha
-    print (f'Seu prato custa:R$ {lasanha:.2f}. Deseja pagar taxa de serviço?')
+    print (f'Seu prato custa:R$ {lasanha:.2f}.')
+    resposta=input('Deseja pagar taxa de serviço? ').upper()
     sim=pedido+(pedido*txservico)
     nao=pedido
-    if sim:
+    if resposta=='sim':
         print(f'Seu prato custa: R$ {sim:.2f}' )
     else:
         print (f'Seu prato custa: R$ {lasanha:.2f}.' )
 elif pedido=='2':
     pedido=parmegiana
-    print (f'Seu prato custa: R$ {parmegiana:.2f}. Deseja pagar taxa de serviço?')
+    print (f'Seu prato custa: R$ {parmegiana:.2f}.')
+    resposta=input('Deseja pagar taxa de serviço? ').upper()
     sim=pedido+(pedido*txservico)
     nao=pedido
-    if sim:
+    if resposta=='sim':
         print(f'Seu prato custa: R$ {sim:.2f}' )
     else:
         print (f'Seu prato custa: R$ {parmegiana:.2f}.' )
 elif pedido=='3':
     pedido=bife_cavalo
-    print (f'Seu prato custa: R$ {bife_cavalo:.2f} Deseja pagar taxa de serviço?')
+    print (f'Seu prato custa: R$ {bife_cavalo:.2f} ')
+    resposta=input('Deseja pagar taxa de serviço? ').upper()
     sim=pedido+(pedido*txservico)
     nao=pedido
-    if sim:
+    if resposta=='sim':
         print(f'Seu prato custa: R$ {sim:.2f}' )
     else:
         print (f'Seu prato custa: R$ {bife_cavalo:.2f}.' )
 elif pedido=='4':
     pedido=macarrao
-    print (f'Seu prato custa: R$ {macarrao:.2f}. Deseja pagar taxa de serviço?')
+    print (f'Seu prato custa: R$ {macarrao:.2f}. ')
+    resposta=input('Deseja pagar taxa de serviço? ').upper()
     sim=pedido+(pedido*txservico)
     nao=pedido
-    if sim:
+    if resposta=='sim':
         print(f'Seu prato custa: R$ {sim:.2f}' )
     else:
         print (f'Seu prato custa: R$ {macarrao:.2f}.' )
 elif pedido=='5':
     pedido=risoto
-    print (f'Seu prato custa: R$ {risoto:.2f}. Deseja pagar taxa de serviço?')
+    print (f'Seu prato custa: R$ {risoto:.2f}.')
+    resposta=input('Deseja pagar taxa de serviço? ').upper()
     sim=pedido+(pedido*txservico)
     nao=pedido
-    if sim:
+    if resposta=='sim':
         print(f'Seu prato custa: R$ {sim:.2f}' )
     else:
         print (f'Seu prato custa: R$ {risoto:.2f}.' )
 elif pedido=='6':
     pedido=salmao_risoto
-    print (f'Seu prato custa: R$ {salmao_risoto:.2f}. Deseja pagar taxa de serviço?' )
+    print (f'Seu prato custa: R$ {salmao_risoto:.2f}.' )
+    resposta=input('Deseja pagar taxa de serviço? ').upper()
     sim=pedido+(pedido*txservico)
     nao=pedido
-    if sim:
+    if resposta=='sim':
         print(f'Seu prato custa: R$ {sim:.2f}' )
     else:
         print (f'Seu prato custa: R$ {salmao_risoto:.2f}.' )
