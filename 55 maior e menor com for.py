@@ -3,7 +3,7 @@ num = int(input('Digite um numero: '))
 menor=num
 maior = num
 for i in range(1,20):
-    num= int(input('Digite ourro numero:'))
+    num= int(input('Digite outro numero:'))
     if num < menor:
         menor = num
     if num > maior:

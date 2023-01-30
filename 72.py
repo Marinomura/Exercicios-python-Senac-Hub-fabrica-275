@@ -18,3 +18,11 @@
 #Melhor nota: 9.9​
 #Pior nota: 7.5​
 #Média: 9,04​
+atleta=input('Digite o nome do atleta: ')
+nota=[]
+for n in range (0,7):
+    notas=float(input('Digite as notas do jurado: '))
+    nota.append (notas)
+print(nota)
+
+    
