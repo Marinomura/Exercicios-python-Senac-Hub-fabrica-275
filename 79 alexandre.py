@@ -1,21 +1,18 @@
-alunos = []
-while True:
-    nome = str(input("Digite o nome do aluno (ou enter para encerrar o programa): "))
-    if nome == "":
-        break
-    aluno = {
-        "nome": nome,
-        "notas": [],
-        "media": 0,
-    }
-    for i in range(4):
-        aluno.get("notas").append(float(input(f"{i+1}º Nota: ")))
-    aluno.get("notas").sort()
-    aluno["media"] = sum(aluno.get("notas")) / 4
-    print(f"Média das Notas: {aluno.get('media'):.2f}")
-    alunos.append(aluno)
+listaNotas = []
+notasAluno = []
 
-print("Alunos com média maior que 7.0:")
-for aluno in alunos:
-    if aluno.get('media') >= 7.0:
-        print(f"{aluno.get('nome')}: {aluno.get('media'):.2f} ")
+print ('Digite as Notas dos Alunos: ')
+for i in range(2):
+  media = 0
+  notasAluno = []
+  print ('Aluno: 0' + str(i + 1))
+
+  for j in range(4):
+    notasAluno.append(float(input('Nota 0' + str(j+1) + ': ')))
+    media += notasAluno[j]
+  media = media/4
+    
+  #print(f'media: {media:.2f}')
+  listaNotas.append(media)
+
+print(f'Médias: {media:.2f}')
