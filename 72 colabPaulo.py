@@ -27,12 +27,13 @@ for n in range (0,7):
     notas=float(input('Digite as notas do jurado: '))
     nota.append (notas)
 print(nota)
-
-#for nota in notas: para tirar as piores notas, neste exemplo tira as notas zero
- #   if nota == 0:
-  #      notas.remove(nota)
-#print(notas)
-#notas_validas = [nota for nota in notas if nota > 0]
-#print(notas_validas)
-#media_valida = sum(notas_validas) / len(notas_validas)
-#print(media_valida)
+for i in range (0,len(nota),1):
+    print(f"Nota: {nota[i]}")
+menor = min(nota)
+maior = max(nota)
+print("\nNotas a serem desconsideradas conforme o regulamento (exclusao da maior e da menor nota): ",maior," e ", menor)
+nota.remove(menor)
+nota.remove(maior)
+print("\n","*"*10,"  RESULTADO FINAL  ","*"*10,"\n\nNotas validadas: ",nota)
+print("\nMédia das notas validadas: ",(sum(nota))/len(nota))
+print("\nAtleta: ",atleta,"\n")
