@@ -16,3 +16,4 @@ for i in range(2):
   listaNotas.append(media)
 
 print(f'Médias: {media:.2f}')
+print (listaNotas) #assim armazena as médias
