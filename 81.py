@@ -13,12 +13,15 @@
 #E) Apresentação da atividade (Em slides)​
 #F) Ao finalizar a atividade coloque na pasta compartilhada no Microsoft Teams (crie uma pasta com a descrição “AtivAva1DevAlg” dentro de ambas as pastas dos membros da dupla).
 medico = {"nome":"" ,"crm":"" ,"cel_md":"" ,"especialidade":"" }
-maes = {'nome':'','endereço':'','telefone':'','dt_nasc':''}
-bebes = {'nome':'','dt_nasc':'','peso_nasc':'','tamanho':'','nome da mãe':'','médico responsavél':''}
-# informacoes=
-cadastrar = int(input("\nSISTEMA DE CADASTRO (por favor digite a opção desejada): \n     1 para MÉDICOS \n     2 para MÃES \n     3 para BEBÊS \n     0 para SAIR \n Opção escolhida: "))
+maes = {'nome':'','endereço':'','telefone':'','dt_nasc':'','prontuario':''}
+bebes = {'nome':'','SEXO':'','dt_nasc':'','peso_nasc':'','tamanho':'','nome da mãe':'','médico responsavél':'','prontuário':''}
+mostar={}
+#cadastrar = int(input("\nSISTEMA DE CADASTRO (por favor digite a opção desejada): \n     1 para MÉDICOS \n     2 para MÃES \n     3 para BEBÊS \n     4 para exibir dados \n     0 para SAIR \n Opção escolhida: "))
 print("\n"*2)
+cadastrar=1
 while cadastrar != 0:
+    cadastrar = int(input("\nSISTEMA DE CADASTRO (por favor digite a opção desejada): \n     1 para MÉDICOS \n     2 para MÃES \n     3 para BEBÊS \n     4 para exibir dados \n     0 para SAIR \n Opção escolhida: "))
+
     if cadastrar == 1:
         print("\n CADASTRO DO MÉDICO\n","-"*18,"\n")
         nome_md =(input("Digite o nome do médico: ")).upper()
@@ -29,7 +32,6 @@ while cadastrar != 0:
         medico["cel_md"] = cel_md
         especialidade = str(input("Digite a especialidade do médico: "))
         medico["especialidade"] = especialidade
-        cadastrar = int(input("\nSISTEMA DE CADASTRO (por favor digite a opção desejada): \n     1 para MÉDICOS \n     2 para MÃES \n     3 para BEBÊS \n     0 para SAIR \n Opção escolhida: "))
         print("\n")
         
     elif cadastrar == 2:
@@ -42,23 +44,42 @@ while cadastrar != 0:
         maes['telefone']=tel_mae
         dn_mae=input('Digite a data de nascimento da mãe: ')
         maes['dt_nasc']=dn_mae
-        cadastrar = int(input("\nSISTEMA DE CADASTRO (por favor digite a opção desejada): \n     1 para MÉDICOS \n     2 para MÃES \n     3 para BEBÊS \n     0 para SAIR \n Opção escolhida: "))
+        pront=str(input('Digite o número do prontuário médico: '))
+        maes['prontuario']=pront
+       
         print("\n")
     elif cadastrar == 3:
         print("\n CADASTRO DO BEBÊ\n","-"*16,"\n")
-        nomebebe=input('Digite o nome do bebê: ')
+        nomebebe=input('Digite o nome do bebê: ').upper()
         bebes['nome']=nomebebe
+        genero=input('Digite o sexo do bebê: \n F para FEMININO \n M para MASCULINO: ').upper()
+        bebes['SEXO']=genero
+        print('\n')
         dn_bebe=str(input("Digite a Data de nascimento do bebê: "))
         bebes['dt_nasc']=dn_bebe
-        #print(f'Nasceu em: {dn_bebe}')
         peso_bebe=float(input('Digite o peso do bebê em gramas: '))
         bebes['peso_nasc']=peso_bebe
-        #print(f'Peso de nascimento é de:  {peso_bebe} gramas')
         tamanho_bebe=float(input('Digite o tamanho do bebê em cm: '))
         bebes['tamanho']=tamanho_bebe
-        cadastrar = int(input("\nSISTEMA DE CADASTRO (por favor digite a opção desejada): \n     1 para MÉDICOS \n     2 para MÃES \n     3 para BEBÊS \n     0 para SAIR \n Opção escolhida: "))
+        pront=str(input('Digite o número do prontuário médico: '))
+        bebes['prontuário']=pront
         print("\n")
-print(medico)
-print (maes)       
-print(bebes)
-exit()
+    elif cadastrar== 4:
+        print('\n')
+        print('Prontuário nº: ',bebes["prontuário"])
+        print('Nome: ',bebes["nome"])
+        if bebes["SEXO"] == "M":
+            print("SEXO: Masculino")
+        else:
+            print("SEXO: Feminino")
+        print("Nome da mãe: ",maes["nome"])
+        print('Nasceu em: ',bebes["dt_nasc"])
+        print('Medindo: ',bebes["tamanho"], 'centímetros')
+        print('Pesando: ',bebes["peso_nasc"], 'gramas')
+        print('-'*10)
+        imprimir=input('Deseja imprimir a Pulseira Identificadora do Recém Nascido? ').upper()
+        if imprimir=='S':
+            print('Aguarde a impressão.')
+        else:
+            break
+        
