@@ -12,21 +12,53 @@
 #D) Algoritmo em python.​
 #E) Apresentação da atividade (Em slides)​
 #F) Ao finalizar a atividade coloque na pasta compartilhada no Microsoft Teams (crie uma pasta com a descrição “AtivAva1DevAlg” dentro de ambas as pastas dos membros da dupla).
-#bebe=float(input('Digite os dados do bebê: \n Nome: \n Data de nascimento: \n Peso no nascimento: \n Tamanho em centímetros: \n Nome da mãe: \n Nome do médico responsável pelo parto: \n'))
-#print (bebe)
-nomebebe=input('Digite o nome do bebê: ')
-print(nomebebe)
-dn_bebe=str(input("Digite a Data de nascimento do bebê: "))
-print(f'Nasceu em: {dn_bebe}')
-peso_bebe=float(input('Digite o peso do bebê em gramas: '))
-print(f'Peso de nascimento é de:  {peso_bebe} gramas')
-tamanho_bebe=float(input('Digite o tamanho do bebê em cm: '))
-nome_mae=input('Digite o nome da mãe: ')
-endereco=input('Digite o endereço da mãe do bebê: ')
-tel_mae=input('Digite o número telefônico da mãe: ')
-dn_mae=input('Digite a data de nascimento da mãe: ')
-medico=input('Digite o nome do médico responsável pelo parto: ')
-crm=input('Digite o número CRM do médico: ')
-cel_med=input('Digite o número celular do médico: ')
-espec_M=input('Digite a especialidade médica: ')
-
+medico = {"nome":"" ,"crm":"" ,"cel_md":"" ,"especialidade":"" }
+maes = {'nome':'','endereço':'','telefone':'','dt_nasc':''}
+bebes = {'nome':'','dt_nasc':'','peso_nasc':'','tamanho':'','nome da mãe':'','médico responsavél':''}
+# informacoes=
+cadastrar = int(input("\nSISTEMA DE CADASTRO (por favor digite a opção desejada): \n     1 para MÉDICOS \n     2 para MÃES \n     3 para BEBÊS \n     0 para SAIR \n Opção escolhida: "))
+print("\n"*2)
+while cadastrar != 0:
+    if cadastrar == 1:
+        print("\n CADASTRO DO MÉDICO\n","-"*18,"\n")
+        nome_md =(input("Digite o nome do médico: ")).upper()
+        medico["nome"] = nome_md
+        num_crm = int(input("Digite o número do CRM: "))
+        medico["num"] = num_crm
+        cel_md = int(input("Digite o número do celular: "))
+        medico["cel_md"] = cel_md
+        especialidade = str(input("Digite a especialidade do médico: "))
+        medico["especialidade"] = especialidade
+        cadastrar = int(input("\nSISTEMA DE CADASTRO (por favor digite a opção desejada): \n     1 para MÉDICOS \n     2 para MÃES \n     3 para BEBÊS \n     0 para SAIR \n Opção escolhida: "))
+        print("\n")
+        
+    elif cadastrar == 2:
+        print("\n CADASTRO DA MÃE\n","-"*15,"\n")
+        nome_mae=input('Digite o nome da mãe: ').upper()
+        maes['nome']=nome_mae
+        end_maes=input('Digite o endereço da mãe do bebê: ')
+        maes['endereço']=end_maes
+        tel_mae=input('Digite o número telefônico da mãe: ')
+        maes['telefone']=tel_mae
+        dn_mae=input('Digite a data de nascimento da mãe: ')
+        maes['dt_nasc']=dn_mae
+        cadastrar = int(input("\nSISTEMA DE CADASTRO (por favor digite a opção desejada): \n     1 para MÉDICOS \n     2 para MÃES \n     3 para BEBÊS \n     0 para SAIR \n Opção escolhida: "))
+        print("\n")
+    elif cadastrar == 3:
+        print("\n CADASTRO DO BEBÊ\n","-"*16,"\n")
+        nomebebe=input('Digite o nome do bebê: ')
+        bebes['nome']=nomebebe
+        dn_bebe=str(input("Digite a Data de nascimento do bebê: "))
+        bebes['dt_nasc']=dn_bebe
+        #print(f'Nasceu em: {dn_bebe}')
+        peso_bebe=float(input('Digite o peso do bebê em gramas: '))
+        bebes['peso_nasc']=peso_bebe
+        #print(f'Peso de nascimento é de:  {peso_bebe} gramas')
+        tamanho_bebe=float(input('Digite o tamanho do bebê em cm: '))
+        bebes['tamanho']=tamanho_bebe
+        cadastrar = int(input("\nSISTEMA DE CADASTRO (por favor digite a opção desejada): \n     1 para MÉDICOS \n     2 para MÃES \n     3 para BEBÊS \n     0 para SAIR \n Opção escolhida: "))
+        print("\n")
+print(medico)
+print (maes)       
+print(bebes)
+exit()
