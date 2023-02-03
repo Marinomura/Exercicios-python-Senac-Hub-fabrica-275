@@ -21,7 +21,6 @@ print('''Escolha seu café:\n
 print(30 * '*')
 cafe = int(input('Escolha seu café: '))
 valor=0
-
 if cafe >=1 and cafe<=4:
     valor = float(input('Com qual valor você ira pagar: R$ '))
     match cafe:

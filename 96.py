@@ -4,7 +4,7 @@
 #necessita da esfera;​
 #necessita de limpeza; a. necessita troca do cabo ou conector; a. quebrado ou inutilizado Uma identificação igual a zero encerra o programa. Ao final o programa deverá emitir o seguinte relatório:​
 #Quantidade de mouses: 100​
-​#Situação                        Quantidade              Percentual​
+# Situação                        Quantidade              Percentual​
 #1- necessita da esfera                  40                     40%​
 #2- necessita de limpeza                 30                     30%​
 #3- necessita troca do cabo ou conector  15                     15%​
