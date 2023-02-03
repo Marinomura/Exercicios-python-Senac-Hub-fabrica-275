@@ -54,9 +54,11 @@ if cafe >=1 and cafe<=4:
         num = num - (dez * 0.10)
 
         cinco = num // 0.05
-        num = num - (cinco * 0.25)
+        num = num - (cinco * 0.05)
 
-        um = num // 0.01
+        hum = num // 0.01
+        
+        
     
     else:
         print('Por favor escolha uma das opções na tela!')
@@ -66,7 +68,7 @@ if cafe >=1 and cafe<=4:
     print(f'Moedas de R$0,25 centavos = {vinteCinco}')
     print(f'Moedas de R$0,10 centavos = {dez}')
     print(f'Moedas de R$0,05 centavos = {cinco}')
-    print(f'Moedas de R$0,01 centavos = {um}')
+    print(f'Moedas de R$0,01 centavos = {hum}')
 else:
     
         print('Por favor escolha uma das opções na tela!')
