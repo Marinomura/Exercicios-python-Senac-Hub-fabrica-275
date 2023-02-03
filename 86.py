@@ -3,11 +3,13 @@
 # o algoritmo deverá escrever “Financiamento Concedido"; senão, ele deverá escrever "Financiamento Negado".
 # Independente de conceder ou não o financiamento, o algoritmo escreverá depois a frase "Obrigado por nos consultar."​
 
+import time
 
 salario = float(input('Digite o salário: R$  '))
 financiamento = float(input('Digite o valor do financiamento desejado: R$ '))
-
 base = salario * 5
+print ("Analisando.....")
+time.sleep (1)
 if financiamento <= base:
     print('Financiamento Concedido!!')
 else:

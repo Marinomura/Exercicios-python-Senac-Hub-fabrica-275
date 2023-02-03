@@ -1,5 +1,5 @@
 #Fatura da Águas Guariroba –as regras que a Águas Guariroba utiliza para cobrar a fatura de água e esgoto de clientes residenciais estão expressas na tabela abaixo. 
-# Repare que existem 6faixas de consumo e que cada uma possui uma franquia de consumo e um valor diferente para cada metro cúbico (m3) consumido.​
+# Repare que existem 6 faixas de consumo e que cada uma possui uma franquia de consumo e um valor diferente para cada metro cúbico (m3) consumido.​
 #faixa  volume da faixa    franquia     valor(R$/m³)     Água     Esgoto
 #1      min até 5m³        5m³         R$37.47            37.47    29.97
 #2      de 6 a 10 m³       5m³         R$ 1.16             5.80     4.64
@@ -36,3 +36,4 @@
 #(8) O valor referente ao esgoto corresponde a 80% do valor da água, ou seja, R$ 251,08 × 0,8 = R$ 200,86;​
 
 #(9) O valor da fatura é dado pela soma do consumo de água pela do esgoto, ou seja,R$ 251,08 + R$ 200,86= R$ 451,94.​
+
