@@ -1,17 +1,26 @@
-res = []
-res.append(input("Telefonou para a vítima? 1/Sim ou 0/Não: "))
-res.append(input("Esteve no local do crime? 1/Sim ou 0/Não: "))
-res.append(input("Mora perto da vítima? 1/Sim ou 0/Não: "))
-res.append(input("Devia para a vítima? 1/Sim ou 0/Não: "))
-res.append(input("Já trabalhou com a vítima? 1/Sim ou 0/Não: "))
-soma_respostas = 0
-for i in res: # soma o número de respostas
- soma_respostas += int(i)
-if (soma_respostas < 2):
- print("\nInocente")
-elif (soma_respostas == 2):
- print("\nSuspeita")
-elif (3 <= soma_respostas <= 4):
- print("\nCúmplice")
-elif (soma_respostas == 5):
- print("\nAssassino")
+meses = [
+    "janeiro",
+    "fevereiro",
+    "março",
+    "abril",
+    "maio",
+    "junho",
+    "julho",
+    "agosto",
+    "setembro",
+    "outubro",
+    "novembro",
+    "dezembro",
+]
+temperaturas = []
+for i in range(12):
+    temperaturas.append(
+        float(input(f"Digite a temperatura de {meses[i]} em ºC: "))
+    )
+
+media = sum(temperaturas) / 12
+print(f"\nA média das temperaturas foi {media:.2f}ºC")
+print("Meses com temperaturas acima da média: ")
+for i in range(12):
+    if temperaturas[i] > media:
+        print(f"{i+1} - {meses[i].capitalize()} com {temperaturas[i]:.2f}ºC")
