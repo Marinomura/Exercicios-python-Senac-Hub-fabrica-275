@@ -25,5 +25,5 @@ media = sum(temperaturas) / 12
 print(f"\nA média das temperaturas foi {media:.2f}ºC")
 print("Meses com temperaturas acima da média: ")
 for i in range(12):
-    if temperaturas[i] > media:
-        print(f"{i+1} - {meses[i].capitalize()} com {temperaturas[i]:.2f}ºC")
+  if temperaturas[i] > media:
+      print(f"{i+1} - {meses[i].capitalize()} com {temperaturas[i]:.2f}ºC")
