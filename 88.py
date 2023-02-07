@@ -41,8 +41,8 @@ if cafe >=1 and cafe<=4:
     if valor >= valor_cafe:
         num = valor - valor_cafe
 
-        real = num // 1.0
-        num = num - (real * 1.0)
+        humreal = num // 1.0
+        num = num - (humreal * 1.0)
 
         cinquenta = num // 0.5
         num = num - (cinquenta * 0.5)
@@ -63,7 +63,7 @@ if cafe >=1 and cafe<=4:
     else:
         print('Por favor escolha uma das opções na tela!')
     print(f'O valor do troco é de R${troco}')
-    print(f'Moedas de R$1 real = {real} ')
+    print(f'Moedas de R$1 real = {humreal} ')
     print(f'Moedas de R$0,50 centavos = {cinquenta}')
     print(f'Moedas de R$0,25 centavos = {vinteCinco}')
     print(f'Moedas de R$0,10 centavos = {dez}')
