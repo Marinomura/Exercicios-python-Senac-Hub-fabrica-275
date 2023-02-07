@@ -2,7 +2,7 @@
 # "Qual o melhor Sistema Operacional para uso em servidores?"​
 #
 #As possíveis respostas são:​
-​#1- Windows Server​
+#1- Windows Server​
 #2- Unix​
 #3- Linux​
 #4- Netware​
@@ -25,4 +25,4 @@
 #Outro                     150    2%​
 #-------------------     -----​
 #Total                    8800​
-​#O Sistema Operacional mais votado foi o Unix, com 3500 votos, correspondendo a 40% dos votos.​
+# O Sistema Operacional mais votado foi o Unix, com 3500 votos, correspondendo a 40% dos votos.​
