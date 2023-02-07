@@ -14,3 +14,14 @@
 #$900 - $999​
 #$1000 em diante​
 #Desafio: Crie uma fórmula para chegar na posição da lista a partir do salário, sem fazer vários ifs aninhados.​
+faixa_salario=[[200,299] ,[300,399],
+          [400,499], [500,599],
+          [600,699] ,[700,799],
+          [800,899] ,[900,999],
+          ]
+venda=float(input('Digite o valor da venda por vendedor:'))
+comissao=venda*0.9
+acrescimo=200
+salario=comissao+acrescimo
+print(salario)
+
