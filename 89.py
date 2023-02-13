@@ -37,3 +37,27 @@
 
 #(9) O valor da fatura é dado pela soma do consumo de água pela do esgoto, ou seja,R$ 251,08 + R$ 200,86= R$ 451,94.​
 
+consumo = int(input("Informe qual o consumo de água em m³: "))
+
+cons_real = consumo
+total = 0
+
+if cons_real <= 5:
+    total = 37.47 
+    if >= 10 and >=5:
+    cons_real -= 5
+    total += 5.80
+if 10 > cons_real >= 15:
+    cons_real -= 5
+    total += 32.30 
+if  20 < cons_real <= 30:
+    cons_real -= 10
+    total += 65.50
+if cons_real > 30:
+    dif = cons_real - 30
+    total = dif * 11.08
+    cons_real -= dif 
+
+tarifa = total + (total * 0.8)
+
+print(f'O valor da fatura é de R${tarifa:.2f}, sendo R${total:.2f} referente a água e R${total * 0.8:.2f} a esgoto') 
