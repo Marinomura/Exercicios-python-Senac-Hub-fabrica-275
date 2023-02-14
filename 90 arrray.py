@@ -16,12 +16,14 @@
 #Desafio: Crie uma fórmula para chegar na posição da lista a partir do salário, sem fazer vários ifs aninhados.​
 #digitar Zero pra sair
 
+#TÁ FODA
+
 possiveis_salarios = [
     [200,299],[300,399],[400,499],
     [500,599],[600,699], [700,799],
     [800,899],[900,999]
     ]
-quantidades = [0]*9          
+quantidades = [0]*9     #9 É PQ SÃO NOVE POSIÇÕES     
 salarios = []
 vendas_brutas = True
 while vendas_brutas != 0:
