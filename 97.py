@@ -29,3 +29,21 @@
 #4 - vectra          -    9.0 -  111.1 litros - R$ 250.00​
 #5 - peugeout        -   14.5 -   69.0 litros - R$ 155.17​
 #O menor consumo é do peugeout.​
+
+veiculos = ['Fusca', 'Polo', 'UNO', 'Ferrari', 'HB20']
+consumo_carros = []
+combustivel=2.25
+print('\n Digite o consumo dos automóveis para que façamos um comparativo de consumo de combustível\n')
+
+for i in range(5):
+    print('Veículo',i + 1,'\nNome: ',veiculos[i])
+    km_litro = float(input('Km por litro: '))
+    consumo_carros.append(km_litro)
+
+print('\nRelatório Final')
+
+for i in range(5):
+    print(f'{i+1} - {veiculos[i]} - {consumo_carros[i]} - {round(1000 / consumo_carros[i])} litros - R$ {round(1000 / consumo_carros[i]) * combustivel:.2f}')
+
+menor_consumo = consumo_carros.index(max(consumo_carros))
+print('O veículo com menor consumo é o: ', veiculos[menor_consumo])
