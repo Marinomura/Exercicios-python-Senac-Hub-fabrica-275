@@ -3,7 +3,7 @@ uso_dados =[]
 uso_dados_MB = []
 percentual_MB = []
 
-with open("c:/Users/Suporte/Desktop/Python study/usuarios.txt", 'r') as arquivo: #abrindo o arquivo txt do exercicio é necessario criar o arquivo
+with open("C:\Users\fabrica.aluno2\OneDrive - Serviço Nacional de Aprendizagem Comercial\MARINES\f-brica275\usuarios 95.txt", 'r') as arquivo: #abrindo o arquivo txt do exercicio é necessario criar o arquivo
     for i in range(6):
         nome = arquivo.readline(15)
         nome = nome.replace(' ','') #remove os espaços em branco
@@ -25,7 +25,7 @@ def calc_percent(uso_dados_MB):
         percentual_MB.append(percentual)
 
 def impressao(percentual_MB,usuarios):
-    with open("c:/Users/Suporte/Desktop/Python study/relatório.txt", 'w') as arquivo: #criando o arquivo relatorio txt
+    with open("C:\Users\fabrica.aluno2\OneDrive - Serviço Nacional de Aprendizagem Comercial\MARINES\f-brica275\usuarios 95.txt", 'w') as arquivo: #criando o arquivo relatorio txt
         arquivo.write('ACME Inc.               Uso do espaço em disco pelos usuários\n')
         arquivo.write('-' * 72)
         arquivo.write('\n')

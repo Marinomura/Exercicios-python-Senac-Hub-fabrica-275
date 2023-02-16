@@ -18,7 +18,7 @@ def espacoMedioOcupado(lista, total):
 usuarios = []
 posicao = 1
 total = media = 0
-with open ("usuarios.txt","r") as arquivo:
+with open ("usuarios 95.txt","r") as arquivo:
    valor = 0
    for linha in arquivo:
       usuarios.append(linha.split()) 
@@ -35,7 +35,7 @@ with open ("usuarios.txt","r") as arquivo:
 
 media = espacoMedioOcupado(cadaUsuario,total)
 
-with open ("relatorio.txt","w") as arquivo:
+with open ("usuarios 95.txt","w") as arquivo:
    arquivo.write("ACME Inc.               Uso do espaço em disco pelos usuários.\n")
    arquivo.write("--------------------------------------------------------------\n")
    arquivo.write("Nr.\tUsuário        \tEspaço utilizado\t% do uso\n\n")
@@ -48,5 +48,5 @@ with open ("relatorio.txt","w") as arquivo:
    arquivo.write('\n\nEspaço médio Ocupado: ' + "{0:.2f}".format(media) + ' MB')
    arquivo.close()
 
-with open ("relatorio.txt","r") as arquivo:
+with open ("usuarios 95.txt","r") as arquivo:
    print(arquivo.read())
