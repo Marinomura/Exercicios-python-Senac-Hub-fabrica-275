@@ -19,17 +19,23 @@
 
 #Exemplo: Assuma que que um determinado domicílio consumiu 37 m3de água num determinado mês. Para o cálculo da respectiva fatura, deve-se distribuir esse volume pelas faixas de consumo da tabela, como explicado abaixo:​
 
-#(1) 1ª faixa (franquia de 5 m³) –O consumo dos primeiros 5(cinco) m³ de água são faturados pela tarifa mínima, que é de R$ 37,47. Dos 37 m³ consumidos, restam 32 m³ para serem faturados pelas demais faixas de consumo;​
+#(1) 1ª faixa (franquia de 5 m³) –O consumo dos primeiros 5(cinco) m³ de água são faturados pela tarifa mínima, que é de R$ 37,47. 
+# Dos 37 m³ consumidos, restam 32 m³ para serem faturados pelas demais faixas de consumo;​
 
-#(2) 2ª faixa (franquia de 5 m³) –Os próximos5 (cinco) m³ que ultrapassam o consumo da 1ª faixa são cobrados pelo valor de excedente da2ª faixa de consumo da tabela abaixo (5m³ ×R$ 1,16 = R$ 5,80). Dos 37 m³ consumidos, 5 foram faturados pela 1ª faixa e outros 5 pela 2ª faixa restando, portanto, 27 m³ para serem faturados;​
+#(2) 2ª faixa (franquia de 5 m³) –Os próximos5 (cinco) m³ que ultrapassam o consumo da 1ª faixa são cobrados pelo valor de excedente da2ª faixa de consumo da tabela abaixo (5m³ ×R$ 1,16 = R$ 5,80). 
+# Dos 37 m³ consumidos, 5 foram faturados pela 1ª faixa e outros 5 pela 2ª faixa restando, portanto, 27 m³ para serem faturados;​
 
-#(3) 3ª faixa (franquia de 5 m³) –Os próximos 5 (cinco) m³ que ultrapassam o consumo da 2ª faixa são cobrados pelo valor de excedente da 3ª faixa de consumo (5 m³ × R$ 6,46 = R$ 32,30). Até essa faixa, foram faturados 15 m³ e restam ainda 22 m³ para serem faturados;​
+#(3) 3ª faixa (franquia de 5 m³) –Os próximos 5 (cinco) m³ que ultrapassam o consumo da 2ª faixa são cobrados pelo valor de excedente da 3ª faixa de consumo (5 m³ × R$ 6,46 = R$ 32,30).
+# Até essa faixa, foram faturados 15 m³ e restam ainda 22 m³ para serem faturados;​
 
-#(4) 4ª faixa (franquia de 5 m³) –Os próximos 5 (cinco) m³ que ultrapassam o consumo da 3ª faixa são cobrados pelo valor de excedente da 4ª faixa de consumo (5 m³ × R$ 6,49 = R$ 32,45). Até essa faixa, foram faturados 20 m³ e restam ainda 17 m³ para serem faturados;​
+#(4) 4ª faixa (franquia de 5 m³) –Os próximos 5 (cinco) m³ que ultrapassam o consumo da 3ª faixa são cobrados pelo valor de excedente da 4ª faixa de consumo (5 m³ × R$ 6,49 = R$ 32,45). 
+# Até essa faixa, foram faturados 20 m³ e restam ainda 17 m³ para serem faturados;​
 
-#​(5) 5ª faixa (franquia de 10 m³) –Os próximos 10 (dez) m³ que ultrapassam o consumo da 4ª faixa são cobrados pelo valor de excedente da 5ª faixa de consumo (10 m³ × R$ 6,55 = R$ 65,50). Até essa faixa, foram faturados 30 m³ e restam ainda 7 m³ para serem faturados;​
+#​(5) 5ª faixa (franquia de 10 m³) –Os próximos 10 (dez) m³ que ultrapassam o consumo da 4ª faixa são cobrados pelo valor de excedente da 5ª faixa de consumo (10 m³ × R$ 6,55 = R$ 65,50). 
+# Até essa faixa, foram faturados 30 m³ e restam ainda 7 m³ para serem faturados;​
 
-#(6)6ª faixa (franquia livre) –Os próximos 7 (sete) m³ que ultrapassam o consumo da 5ª faixa são cobrados pelo valor de excedente da 6ª faixa de consumo (7 m³ × R$ 11,08 = R$ 77,56). Até essa faixa, foram faturados 37 m³, que foi o valor consumido pelo cliente;​
+#(6)6ª faixa (franquia livre) –Os próximos 7 (sete) m³ que ultrapassam o consumo da 5ª faixa são cobrados pelo valor de excedente da 6ª faixa de consumo (7 m³ × R$ 11,08 = R$ 77,56).
+# Até essa faixa, foram faturados 37 m³, que foi o valor consumido pelo cliente;​
 
 #(7) Para obter o valor da água consumida, deve-se somar o consumo em cada faixa, ou seja, R$ 37,47 + R$ 5,80 + R$ 32,30 + R$ 32,45 + R$ 65,50 + R$ 77,56 = R$ 251, 08;​
 
@@ -37,28 +43,28 @@
 
 #(9) O valor da fatura é dado pela soma do consumo de água pela do esgoto, ou seja,R$ 251,08 + R$ 200,86= R$ 451,94.​
 
+consumo=float(input('Digite o consumo em m³: '))
+cons_basico=37.47
+total=0
+f1=37.47
+f2= 1.16*cons_basico 
+f3=6.46*cons_basico
+f4=6.49*cons_basico
+f5=6.55*cons_basico
+f6= consumo*11.08 
 
-consumo = int(input("Informe qual o consumo de água em m³: "))
-cons_real = consumo
-total = 0
-
-
-if cons_real <= 5:
-    total = 37.47 
-#if cons_real <=10:
- #   cons_real -= 5
-  #  total += 5.80
-if 10 > cons_real >= 15:
-    cons_real -= 5
-    total += 32.30 
-if  20 < cons_real <= 30:
-    cons_real -= 10
-    total += 65.50
-if cons_real > 30:
-    dif = cons_real - 30
-    total = dif * 11.08
-    cons_real -= dif 
-
-tarifa = total + (total * 0.8)
-
-print(f'O valor da fatura é de R${tarifa:.2f}, sendo R${total:.2f} referente a água e R${total * 0.8:.2f} a esgoto') 
+if consumo<=5:
+     total=total+f1
+if consumo>5 and consumo <=10:
+    total=total+f2
+if consumo >10 and consumo <=15:
+    total= total+f3
+if consumo <16 and consumo <=20:
+    total= total+f4
+if consumo >20 and consumo>=30:
+    total=total+f5
+else:
+    consumo >30
+    total= total+f6
+print(f"O consumo de {consumo}m³ de água gerou uma fatura no valor de:\nR${total:.2f} referente à água.\n"
+f"R${total*0.8:.2f} referente à taxa de esgoto.\nTotal da conta R${total+total*0.8:.2f}.")

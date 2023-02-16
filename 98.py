@@ -26,6 +26,7 @@
 #-------------------     -----​
 #Total                    8800​
 # O Sistema Operacional mais votado foi o Unix, com 3500 votos, correspondendo a 40% dos votos.​
+
 #COLADO
 
 print(''''Qual o melhor Sistema Operacional para uso em servidores?'
