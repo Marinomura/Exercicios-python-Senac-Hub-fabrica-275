@@ -12,4 +12,7 @@ for posicao in range (10):
 for posicao3 in range (10):
     v3.append(v1[posicao3])
     v3.append(v2[posicao3])
-print (v3)
+print ('Os valores do primeiro vetor  é :',(v1))
+print ('Os valores do segundo vetor é :',(v2))
+print ('Os valores do terveiro vetor é :',(v3))
+
