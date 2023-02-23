@@ -9,8 +9,10 @@
 #carlos          91257581​
 #cesar           987458​
 #rosemary        789456125​
-#Neste arquivo, o nome do usuário possui 15 caracteres. A partir deste arquivo, você deve criar um programa que gere um relatório, chamado "relatório.txt", no seguinte formato:ACME Inc.               Uso do espaço em disco pelos usuários​
-#​CME Inc.               Uso do espaço em disco pelos usuários​
+#Neste arquivo, o nome do usuário possui 15 caracteres. A partir deste arquivo,
+# você deve criar um programa que gere um relatório, chamado "relatório.txt", no seguinte formato:ACME Inc.         
+# Uso do espaço em disco pelos usuários​
+#A​CME Inc.               Uso do espaço em disco pelos usuários​
 #------------------------------------------------------------------------​
 #Nr.  Usuário        Espaço utilizado     % do uso​
 #1    alexandre       434,99 MB             16,85%​

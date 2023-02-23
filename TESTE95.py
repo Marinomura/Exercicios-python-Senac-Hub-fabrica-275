@@ -40,4 +40,4 @@ def impressao(percentual_MB,usuarios):
 
 conversor_bytes(uso_dados)
 calc_percent(uso_dados_MB)
-impressao(percentual_MB,usuarios)
+impressao(percentual_MB,usuarios) 
