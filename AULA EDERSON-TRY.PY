@@ -1,8 +1,8 @@
-#import os
+import os
 clientes =[]     # -> clientes=[]
 fornecedores= [] #-> fornecedores =[]
 pecas =[]       #-> pecas=[]
-#opcao = 0 # criar variavel para loop
+
 while True: # NÃO TEM CONDICIONAL
     print('Selecione uma opção: ') #SEM ASPAS
     print('1 - Cadastrar cliente') #SEM ASPAS
@@ -12,13 +12,14 @@ while True: # NÃO TEM CONDICIONAL
     print('5 - Sair ')#SEM ASPAS
 
     opcao = input("Opção selecionada: ") #-> o sinal =
+    os.system(cls)
     try: #NÃO ESTAVA INDENTADO
             opcao = int(opcao)
     except ValueError: #excepet
         print("Opção inválida. Por favor, digite um número.")
         continue
 
-    if opcao == 1: #sem sianl de :
+    if opcao == 1: #sem sinal de :
         nome = input("Digite o nome do cliente: ")  #->input
         telefone = input("Digite o telefone do cliente: ") #->input
         endereco = input("Digite o endereço do cliente: ") #->input
@@ -32,6 +33,7 @@ while True: # NÃO TEM CONDICIONAL
         fornecedores.append({"nome": nome, "telefone": telefone, "endereco": endereco})
         print("Fornecedor cadastrado com sucesso!")
 
+#colocar um while pq perde qdo digitado diferente
     elif opcao == 3:
         nome = input("Digite o nome da peça: ")
         fornecedor = input("Digite o nome do fornecedor da peça: ")
@@ -58,10 +60,10 @@ while True: # NÃO TEM CONDICIONAL
                 print()
 
                 print("Relatório de peças:")
-        for peca in peca:
+        for peca in pecas:
             print(f"Nome: {peca['nome']}, Fornecedor: {peca['fornecedor']}, Preço: {peca['preco']}")
             print()
-            #os.system('pause')
+            os.system('pause')
     elif opcao == 5:
         print("Encerrando o programa...")
         break
