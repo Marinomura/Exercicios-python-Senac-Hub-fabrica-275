@@ -2,8 +2,8 @@
 clientes =[]     # -> clientes=[]
 fornecedores= [] #-> fornecedores =[]
 pecas =[]       #-> pecas=[]
-opcao = 0 # criar variavel para loop
-while opcao!= 0: # NÃO TEM CONDICIONAL
+#opcao = 0 # criar variavel para loop
+while True: # NÃO TEM CONDICIONAL
     print('Selecione uma opção: ') #SEM ASPAS
     print('1 - Cadastrar cliente') #SEM ASPAS
     print('2 - Cadastrar fornecedor ')#SEM ASPAS
@@ -64,7 +64,7 @@ while opcao!= 0: # NÃO TEM CONDICIONAL
             #os.system('pause')
     elif opcao == 5:
         print("Encerrando o programa...")
-
+        break
     else:
         print("Opção inválida. Por favor, tente novamente.")
                 
