@@ -12,7 +12,7 @@ while True: # NÃO TEM CONDICIONAL
     print('5 - Sair ')#SEM ASPAS
 
     opcao = input("Opção selecionada: ") #-> o sinal =
-    os.system(cls)
+    os.system ('cls')
     try: #NÃO ESTAVA INDENTADO
             opcao = int(opcao)
     except ValueError: #excepet
