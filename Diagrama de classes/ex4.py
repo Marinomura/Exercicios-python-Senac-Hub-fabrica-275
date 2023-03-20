@@ -1,8 +1,8 @@
 #crie uma função que recebe uma lista de numeros como parametro e retorne uma lista com apenas numeros pares
 def pares (lista):
-    par = lista[0]
+    par = []
     for num in lista:
         if num%2 == 0:
-            par.append ()
+            par.append (num)
             return print (par)
-pares([1,2,3,4,5,6,7,8,9,12,13,14,15,16])
+pares ([1,2,3,6,8,12,15,19,22])
