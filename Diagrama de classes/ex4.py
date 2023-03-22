@@ -1,4 +1,5 @@
-#crie uma função que recebe uma lista de numeros como parametro e retorne uma lista com apenas numeros pares
+#crie uma função que recebe uma lista de numeros como parametro 
+# e retorne uma lista com apenas numeros pares
 def pares (lista):
     par = []
     for num in lista:
