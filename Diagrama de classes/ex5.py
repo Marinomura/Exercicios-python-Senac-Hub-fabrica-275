@@ -5,5 +5,7 @@ def palavras_com_A (x):
     for A in x:
         if A[0] =='a' or A [0] =='A':
             p.append(A)
-            print (p)
-    return p
+    return print (p)
+
+palavras_com_A(['ana','joao','fernando','amelia'])
+ 

@@ -9,4 +9,10 @@ class teste ():
             print ('Tá dentro!!!')
         else:
             print ('Tá fora!!!')
+
+
+
+
+
 pessoa=teste()
+pessoa.cerificar_adeq()
