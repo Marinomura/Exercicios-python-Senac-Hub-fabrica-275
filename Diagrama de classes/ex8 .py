@@ -5,7 +5,7 @@ def qtdade_ocorrencia (lista, num):
     for  n  in lista:
         if n == num:
             contador +=1
-    return contador
+    return print (contador)
     
 qtdade_ocorrencia ([2,5,6,7,2,7,2,7],7)
             
