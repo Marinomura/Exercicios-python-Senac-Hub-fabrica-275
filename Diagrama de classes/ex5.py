@@ -3,7 +3,7 @@
 def palavras_com_A (x):
     p=[]
     for A in x:
-        if A in p:
+        if A[0] =='a' or A [0] =='A':
             p.append(A)
+            print (p)
     return p
-print('lista dos nomes ', p)
