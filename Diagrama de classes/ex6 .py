@@ -5,6 +5,6 @@ def string_longa(lista):
     for i in lista:
         if len(i) > len (mais_longa):
             mais_longa=i
-    return mais_longa
-
+    return print (mais_longa)
+    
 string_longa(['jo','michel','experidiana'])
