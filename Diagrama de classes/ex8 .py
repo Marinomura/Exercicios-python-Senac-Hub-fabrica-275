@@ -1,5 +1,6 @@
-#crie uma função que recebe uma lista de numeros como parametro e retorne o numero de ocorrencia
-#de um determinado numeros da lista
+#crie uma função que recebe uma lista de numeros como parametro e 
+# retorne o numero de ocorrencia de um determinado numeros da lista
+
 def qtdade_ocorrencia (lista, num):
     contador = 0
     for  n  in lista:

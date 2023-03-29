@@ -1,4 +1,5 @@
-#crie uma função que recebe uma lista de numeros como parametro e retorne uma lista com apenas numeros menores que 10
+#crie uma função que recebe uma lista de numeros como parametro e
+# retorne uma lista com apenas numeros menores que 10
 def num(lista):
     numero = []
     for num in lista:
