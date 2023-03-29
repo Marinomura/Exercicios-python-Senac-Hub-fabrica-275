@@ -5,7 +5,7 @@ class calc ():
         self.numero1 = int(input("Digite o primeiro número: "))
         self.numero2 = int(input("Digite o segundo número: "))
 
-    def operacao(self):
+    def resultado_operacao(self):
         if self.operacao == "soma":
 	        resultado = int(self.numero1) + int(self.numero2)
         if self.operacao == "sub":
@@ -20,4 +20,4 @@ class calc ():
         print ("O resultado da operação é: " ,resultado)
 
 n1=calc()
-n1.operacao()
+n1.resultado_operacao()
